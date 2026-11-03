@@ -693,6 +693,7 @@ export default {
 		addCondition: 'Új feltétel (ÉS)',
 		addQuestion: 'Új kérdés hozzáadása',
 		addToFeatures: 'Válaszok hozzáadása a térképes jelölésekhez elemzés céljára',
+		allowPhoto: 'Fénykép csatolásának engedélyezése',
 		and: 'ÉS',
 		cloneQuestion: 'Kérdés megkettőzése',
 		conditionalQuestion: 'Feltételesen jelenik meg',

@@ -703,6 +703,7 @@ export default {
 		addCondition: 'Agregar condición (Y)',
 		addQuestion: 'Agregar pregunta',
 		addToFeatures: 'Agregar respuestas a marcadores de mapas con fines de análisis',
+		allowPhoto: 'Permitir adjuntar una foto',
 		and: 'Y',
 		cloneQuestion: 'Duplicar pregunta',
 		conditionalQuestion: 'Condicionalmente visible',

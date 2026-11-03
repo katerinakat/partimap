@@ -215,6 +215,15 @@ function generateAnswersSheet(
 					writeCell(a[subkey]);
 					COL++;
 				});
+			} else if (q.type === 'text' && q.allowPhoto) {
+				// two columns: the text answer, and the attached photo's URL
+				const parsed = safeParseJSON(a) || {};
+				sas.cell(1, COL).string(stripHtml(q.label));
+				writeCell(parsed.text || '');
+				COL++;
+				sas.cell(1, COL).string(`${stripHtml(q.label)} [${m.featurePhoto}]`);
+				writeCell(absoluteUploadUrl(parsed.photo));
+				COL++;
 			} else if (q.type === 'ordering') {
 				const N = (q.options || []).length;
 				// multiple columns, one per row

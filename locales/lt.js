@@ -696,6 +696,7 @@ export default {
 		addCondition: 'Pridėti dar vieną salygą (IR)',
 		addQuestion: 'Pridėti klausimą',
 		addToFeatures: 'Pridėti klausimus kaip žymeklius žemėlapyje analizei',
+		allowPhoto: 'Leisti pridėti nuotrauką',
 		and: 'IR',
 		cloneQuestion: 'Klonuoti klausimą',
 		conditionalQuestion: 'Matomas tik su tam tikra sąlyga',

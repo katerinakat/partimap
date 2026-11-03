@@ -695,6 +695,7 @@ export default {
 		addCondition: 'Adaugă condiție (ȘI)',
 		addQuestion: 'Adaugă întrebare',
 		addToFeatures: 'Adaugă mențiuni la simbolurile de pe hartă pentru analiză ',
+		allowPhoto: 'Permiteți atașarea unei fotografii',
 		and: 'ȘI',
 		cloneQuestion: 'Duplicați întrebarea',
 		conditionalQuestion: 'Vizualizare condiționată',

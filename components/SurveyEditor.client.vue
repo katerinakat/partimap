@@ -549,6 +549,9 @@ async function moveQuestion(questionIndex: number, targetSheetId: number) {
 					<b-form-checkbox v-model="question.multiline">
 						{{ t('SurveyEditor.multiline') }}
 					</b-form-checkbox>
+					<b-form-checkbox v-model="question.allowPhoto">
+						{{ t('SurveyEditor.allowPhoto') }}
+					</b-form-checkbox>
 				</b-form-group>
 				<b-form-group v-if="question.type !== 'static'">
 					<b-form-checkbox v-model="question.required">

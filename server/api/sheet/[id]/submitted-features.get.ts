@@ -65,7 +65,12 @@ function injectSurveyAnswerIntoFeature(f: GeoJsonFeature, q: Question, a: Survey
 		safeParseJSON(a.answer) || a.answer;
 	const str = (v: number | string | string[]) =>
 		Array.isArray(v) ? v.join(', ') : String(v) || '';
-	if (typeof ans === 'object' && !Array.isArray(ans)) {
+	if (q.type === 'text' && q.allowPhoto) {
+		// answer is { text, photo }, inject just the text part
+		const questionId = String(a.questionId);
+		const answer = str((ans as { text?: string })?.text || '');
+		injectAnswerIntoFeature(f, questionId, q.label, answer);
+	} else if (typeof ans === 'object' && !Array.isArray(ans)) {
 		// answer is {...}, so a matrix -> injecting rows separately
 		Object.keys(ans).forEach((k: keyof typeof ans, i) => {
 			const questionId = `${q.id}_${i}`;

@@ -692,6 +692,7 @@ export default {
 		addCondition: 'Add condition (AND)',
 		addQuestion: 'Add question',
 		addToFeatures: 'Add responses to map markings for analysis purposes',
+		allowPhoto: 'Allow attaching a photo',
 		and: 'AND',
 		cloneQuestion: 'Clone question',
 		conditionalQuestion: 'Conditionally visible',

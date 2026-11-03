@@ -43,6 +43,7 @@ export type QuestionType =
 export type Question = {
 	id: number;
 	addToFeatures?: boolean;
+	allowPhoto?: boolean;
 	columns?: QuestionOption[];
 	label: string;
 	html?: string;

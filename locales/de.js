@@ -703,6 +703,7 @@ export default {
 		addCondition: 'Bedingung hinzufügen (UND)',
 		addQuestion: 'Frage hinzufügen',
 		addToFeatures: 'Antworten zur Kartenauswertung hinzufügen',
+		allowPhoto: 'Anhängen eines Fotos erlauben',
 		and: 'UND',
 		cloneQuestion: 'Frage duplizieren',
 		conditionalQuestion: 'Bedingt sichtbar',

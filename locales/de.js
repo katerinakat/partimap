@@ -424,6 +424,7 @@ export default {
 		},
 		interactions: {
 			describing: 'Textfrage hinzufügen',
+			allowPhoto: 'Anhängen eines Fotos erlauben',
 			Point: 'Punktmarkierung setzen',
 			LineString: 'Linien zeichnen',
 			Polygon: 'Polygone zeichnen',

@@ -23,6 +23,13 @@ watch(description, (newDescription) => {
 	feature.properties = feature.properties || {};
 	feature.properties.description = newDescription;
 });
+
+const photo = ref<string | null>(feature?.properties?.photo || null);
+watch(photo, (newPhoto) => {
+	if (!feature) return;
+	feature.properties = feature.properties || {};
+	feature.properties.photo = newPhoto || undefined;
+});
 </script>
 
 <template>
@@ -30,6 +37,11 @@ watch(description, (newDescription) => {
 		<textarea
 			v-model="description"
 			class="form-control form-control-sm"
+		/>
+		<RespondentPhotoInput
+			v-if="drawingInteraction.allowPhoto && sheet"
+			v-model="photo"
+			:sheet-id="sheet.id"
 		/>
 	</form-group>
 </template>

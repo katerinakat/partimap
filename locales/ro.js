@@ -416,6 +416,7 @@ export default {
 		},
 		interactions: {
 			describing: 'Adăugați o întrebare text',
+			allowPhoto: 'Permiteți atașarea unei fotografii',
 			Point: 'Plasează simbol de tip punct',
 			LineString: 'Deseneză linii',
 			Polygon: 'Desează poligon',

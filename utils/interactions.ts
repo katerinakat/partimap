@@ -42,6 +42,11 @@ export type DrawingInteraction = {
 	describing: boolean;
 
 	/**
+	 * Whether visitor can attach a photo alongside the description
+	 */
+	allowPhoto: boolean;
+
+	/**
 	 * Custom label for description field of features
 	 */
 	descriptionLabel: string;
@@ -84,6 +89,7 @@ export function createDrawingInteraction(di: Partial<DrawingInteraction>): Drawi
 		buttonLabel: di.buttonLabel || '',
 		color: di.color || DEFAULT_COLORS[di.type || 'Point'],
 		describing: Object.hasOwn(di, 'describing') ? !!di.describing : true, // true because of backward-compatibility
+		allowPhoto: !!di.allowPhoto,
 		descriptionLabel: di.descriptionLabel || '',
 		featureLabel: di.featureLabel || '',
 		featureQuestion: di.featureQuestion || {},

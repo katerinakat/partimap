@@ -188,6 +188,12 @@ watch(dt, (dt, oldDt) => {
 				v-model="di.descriptionLabel"
 				:placeholder="$t('sheetEditor.defaultDescriptionLabel')"
 			/>
+			<b-form-checkbox
+				v-model="di.allowPhoto"
+				class="mt-2"
+			>
+				{{ $t('sheetEditor.interactions.allowPhoto') }}
+			</b-form-checkbox>
 		</b-form-group>
 
 		<ShowIfEditor

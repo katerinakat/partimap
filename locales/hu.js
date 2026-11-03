@@ -415,6 +415,7 @@ export default {
 		},
 		interactions: {
 			describing: 'Szöveges kérdés hozzáadása',
+			allowPhoto: 'Fénykép csatolásának engedélyezése',
 			Point: 'Pont felrajzolása',
 			LineString: 'Vonal felrajzolása',
 			Polygon: 'Terület felrajzolása',

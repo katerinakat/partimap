@@ -423,6 +423,7 @@ export default {
 		},
 		interactions: {
 			describing: 'Agregar un cuadro de texto',
+			allowPhoto: 'Permitir adjuntar una foto',
 			Point: 'Colocar Punto',
 			LineString: 'Dibujar líneas',
 			Polygon: 'Dibujar polígonos',

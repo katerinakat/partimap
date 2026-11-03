@@ -57,7 +57,7 @@ export async function acceptImage(
 	const root = resolveRoot();
 
 	const subdir = path.join(root, UPLOADS_DIR_NAME, directory);
-	if (!fs.existsSync(subdir)) fs.mkdirSync(subdir);
+	if (!fs.existsSync(subdir)) fs.mkdirSync(subdir, { recursive: true });
 
 	// /uploads/u/123456789.jpg
 	const url = '/' + path.join(UPLOADS_DIR_NAME, directory, `${new Date().getTime()}.jpg`);

@@ -37,6 +37,7 @@ export default {
 		featureDesc: 'Descripción',
 		featureLabel: 'Nombre único de la tarea',
 		featureName: 'Título',
+		featurePhoto: 'Foto',
 		featureQuestion: 'Pregunta de la casilla',
 		featureQuestionAnswer: 'Respuesta',
 		featureType: 'Tipo de caracteristica',

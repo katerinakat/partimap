@@ -37,6 +37,7 @@
 		featureDesc: 'Apibūdinimas',
 		featureLabel: 'Užduoties pavadinimas',
 		featureName: 'Pavadinimas',
+		featurePhoto: 'Nuotrauka',
 		featureQuestion: 'Klausimas',
 		featureQuestionAnswer: 'Atsakymas',
 		featureType: 'Žymeklio tipas',

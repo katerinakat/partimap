@@ -37,6 +37,7 @@ export default {
 		featureDesc: 'Beschreibung',
 		featureLabel: 'Eindeutiger Aufgabenname',
 		featureName: 'Name',
+		featurePhoto: 'Foto',
 		featureQuestion: 'Checkbox-Frage',
 		featureQuestionAnswer: 'Antwort',
 		featureType: 'Markierungstyp',

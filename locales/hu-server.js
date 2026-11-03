@@ -37,6 +37,7 @@ export default {
 		featureDesc: 'Leírás',
 		featureLabel: 'Feladat egyedi neve',
 		featureName: 'Név',
+		featurePhoto: 'Fénykép',
 		featureQuestion: 'Jelölőnégyzetes kérdés',
 		featureQuestionAnswer: 'Válasz',
 		featureType: 'Elem típusa',

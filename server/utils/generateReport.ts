@@ -28,6 +28,12 @@ import { stripHtml } from '~/utils/stripHtml';
 // TODO refactor: use xlsx.js instead of excel4node
 // TODO refactor: use Nuxt i18n server side
 
+function absoluteUploadUrl(path: string | undefined | null) {
+	if (!path) return '';
+	const base = process.env.NUXT_PUBLIC_BASE_URL || '';
+	return `${base}${path}`;
+}
+
 const OL2GM = transformation(PARTIMAP_PROJECTION, GOOGLEMAPS_PROJECTION);
 function ol2gm(coords: number[]) {
 	// TODO can't we use OL's conversion utility here?
@@ -394,8 +400,9 @@ function generateSubmittedFeaturesSheet(
 	sfs.cell(1, 6).string(m.featureName);
 	sfs.cell(1, 7).string(m.descriptionLabel);
 	sfs.cell(1, 8).string(m.featureDesc);
-	sfs.cell(1, 9).string(m.featureQuestion);
-	sfs.cell(1, 10).string(m.featureQuestionAnswer);
+	sfs.cell(1, 9).string(m.featurePhoto);
+	sfs.cell(1, 10).string(m.featureQuestion);
+	sfs.cell(1, 11).string(m.featureQuestionAnswer);
 	let row = 1;
 	for (let i = 0; i < submittedFeatures.length; i++) {
 		const sf = submittedFeatures[i]!;
@@ -446,8 +453,9 @@ function generateSubmittedFeaturesSheet(
 				sfs.cell(row, 6).string(String(name));
 				sfs.cell(row, 7).string(descriptionLabel);
 				sfs.cell(row, 8).string(f?.properties?.description || '');
-				sfs.cell(row, 9).string(f?.properties?.partimapFeatureQuestion || '');
-				sfs.cell(row, 10).string(answer);
+				sfs.cell(row, 9).string(absoluteUploadUrl(f?.properties?.photo));
+				sfs.cell(row, 10).string(f?.properties?.partimapFeatureQuestion || '');
+				sfs.cell(row, 11).string(answer);
 			}
 		}
 	}

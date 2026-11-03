@@ -419,6 +419,7 @@ export default {
 		},
 		interactions: {
 			describing: 'Pridėti tekstinį klausimą',
+			allowPhoto: 'Leisti pridėti nuotrauką',
 			Point: 'Taškų uždėjimas',
 			LineString: 'Linijų braižymas',
 			Polygon: 'Poligono braižymas',

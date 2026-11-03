@@ -37,6 +37,7 @@ export default {
 		featureDesc: 'Description',
 		featureLabel: 'Unique task name',
 		featureName: 'Name',
+		featurePhoto: 'Photo',
 		featureQuestion: 'Checkbox question',
 		featureQuestionAnswer: 'Answer',
 		featureType: 'Type of marker',

@@ -415,6 +415,7 @@ export default {
 		},
 		interactions: {
 			describing: 'Add text question',
+			allowPhoto: 'Allow attaching a photo',
 			Point: 'Place point markers',
 			LineString: 'Draw lines',
 			Polygon: 'Draw polygons',

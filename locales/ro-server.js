@@ -37,6 +37,7 @@ export default {
 		featureDesc: 'Descriere',
 		featureLabel: 'Denumire unică task',
 		featureName: 'Nume',
+		featurePhoto: 'Fotografie',
 		featureQuestion: 'Întrebare tip checkbox',
 		featureQuestionAnswer: 'Răspuns',
 		featureType: 'Tipul simbolului',
